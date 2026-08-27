@@ -1,0 +1,72 @@
+{
+  "_comment": "Sample CVE database for educational vulnerability tracking.",
+  "_note": "Real CVE data is fetched from nvd.nist.gov or cve.mitre.org.",
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2021-44228",
+      "name": "Log4Shell",
+      "affected_software": "Apache Log4j",
+      "affected_versions": ["2.0", "2.1", "2.2", "2.3", "2.14.1"],
+      "fixed_version": "2.15.0",
+      "cvss_score": 10.0,
+      "severity": "CRITICAL",
+      "description": "Remote code execution via crafted log messages. One of the worst vulnerabilities ever found.",
+      "remediation": "Update to Log4j 2.15.0 or later immediately. Disable JNDI if update not possible."
+    },
+    {
+      "cve_id": "CVE-2022-0847",
+      "name": "Dirty Pipe",
+      "affected_software": "Linux Kernel",
+      "affected_versions": ["5.8", "5.9", "5.10", "5.15", "5.16.10"],
+      "fixed_version": "5.16.11",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "description": "Local privilege escalation — allows unprivileged user to overwrite read-only files.",
+      "remediation": "Update Linux kernel to 5.16.11, 5.15.25, or 5.10.102."
+    },
+    {
+      "cve_id": "CVE-2021-34527",
+      "name": "PrintNightmare",
+      "affected_software": "Windows Print Spooler",
+      "affected_versions": ["Windows 10 pre-July 2021", "Windows Server 2019"],
+      "fixed_version": "Post July 2021 Patch Tuesday",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "description": "Remote code execution via Windows Print Spooler. Widely exploited in the wild.",
+      "remediation": "Apply Microsoft's July 2021 cumulative update. Disable Print Spooler if not needed."
+    },
+    {
+      "cve_id": "CVE-2023-23397",
+      "name": "Outlook NTLM Hash Leak",
+      "affected_software": "Microsoft Outlook",
+      "affected_versions": ["Outlook 2016", "Outlook 2019", "Outlook 365 pre-March 2023"],
+      "fixed_version": "March 2023 Patch",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "description": "Zero-click vulnerability — attacker sends specially crafted email to steal NTLM hashes.",
+      "remediation": "Apply Microsoft March 2023 Patch Tuesday updates."
+    },
+    {
+      "cve_id": "CVE-2022-30190",
+      "name": "Follina / MSDT",
+      "affected_software": "Microsoft Support Diagnostic Tool",
+      "affected_versions": ["Windows 10", "Windows 11", "Windows Server 2019"],
+      "fixed_version": "June 2022 Patch",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "description": "Remote code execution via malicious Office documents — no macros needed.",
+      "remediation": "Apply June 2022 Patch Tuesday. Disable MSDT protocol as interim workaround."
+    },
+    {
+      "cve_id": "CVE-2019-0708",
+      "name": "BlueKeep",
+      "affected_software": "Windows Remote Desktop Services",
+      "affected_versions": ["Windows XP", "Windows 7", "Windows Server 2008"],
+      "fixed_version": "May 2019 Patch",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "description": "Wormable RCE in RDP — exploitable without authentication. Similar to WannaCry risk level.",
+      "remediation": "Apply May 2019 patches. Disable RDP if not needed. Use NLA."
+    }
+  ]
+}
