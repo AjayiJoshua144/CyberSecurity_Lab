@@ -34,7 +34,7 @@ from modules.vuln_tracker import run_vuln_tracker, list_all_cves
 from modules.access_tester import run_access_tester
 
 # Path to the compiled C++ port scanner
-CPP_SCANNER = os.path.join(BASE_DIR, "cpp", "port_scanner.exe")
+CPP_SCANNER = os.path.join(BASE_DIR, "cpp", "port_scanner")
 REPORT_DIR  = os.path.join(BASE_DIR, "reports")
 
 
