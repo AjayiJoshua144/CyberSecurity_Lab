@@ -1,4 +1,4 @@
-# CyberShield Lab
+# CyberSecurity Lab
 ### A Student Cybersecurity Defensive Workflow Project
 **Author:** Ajayi Joshua Abayomi | Babcock University | 300L Information Technology
 
