@@ -23,14 +23,14 @@ core areas a cybersecurity analyst deals with daily:
 
 ## Setup & Run
 
-### Step 1 — Build the C++ Port Scanner
+### Step 1 - Build the C++ Port Scanner
 ```bash
 cd cpp/
 make
 cd ..
 ```
 
-### Step 2 — Run the Lab
+### Step 2 - Run the Lab
 ```bash
 python3 main.py
 ```
